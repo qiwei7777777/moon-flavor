@@ -1,6 +1,6 @@
 {
   "name": "moon-flavor",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A moonlight-flavored Pi-style theme for DeepSeek Harness",
   "type": "module",
   "main": "lib/index.js",
@@ -24,5 +24,9 @@
     "pi",
     "moon",
     "flavor"
+  ],
+  "files": [
+    "README.md",
+    "lib"
   ]
 }
