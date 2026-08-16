@@ -16,19 +16,26 @@ serif italics, hazy-blue accents, sharp corners, and terminal-flavored motion.
 
 ## Install
 
+One command (requires [pnpm](https://pnpm.io/installation) on PATH):
+
 ```bash
-npm install moon-flavor
+npx @deepseek-ai/dsh plugin add moon-flavor
 ```
 
-Then register it in your profile's `cordis.patch.yml`:
+`moon-flavor` declares `dsh.bundle.patch`, so dsh installs it **and** registers
+it as a profile layer automatically — no config to edit. Restart `dsh web` and
+hard-refresh (Cmd+Shift+R).
+
+### Manual install (no pnpm)
+
+Drop the package into `~/.dsh/profiles/web/node_modules/`, then add to
+`~/.dsh/profiles/web/cordis.patch.yml`:
 
 ```yaml
 - insert:
     - id: moon-flavor
       name: 'moon-flavor'
 ```
-
-Restart `dsh web` and hard-refresh (Cmd+Shift+R).
 
 ## Typefaces
 
